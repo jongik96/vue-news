@@ -1,6 +1,11 @@
 <template>
   <div>
-      <div v-for="ask in fetchedAsk" :key="ask.id" >{{ask.title}}</div>
+    <p v-for="item in this.$store.state.ask" :key="item.id" >
+      <router-link :to="`/item/${item.id}`">
+        {{item.title}}
+      </router-link>
+      <small>{{item.time_ago}} {{item.domain}}</small>
+    </p>
   </div>
 </template>
 
