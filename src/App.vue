@@ -20,6 +20,20 @@ body{
   margin: 0;
 }
 
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color:orangered;
+  text-decoration: underline;
+}
+
+a.router-link-exact-active {
+  text-decoration: underline;
+}
+
 /* router transition */
 .page-enter-active, .page-leave-active {
   transition: opacity .5s;
