@@ -39,24 +39,6 @@
 <script>
 // import { mapGetters } from 'vuex';
 export default {
-  created(){
-    // vuex 에서 NewsList 가져오기
-    // this.$store.dispatch('FETCH_NEWS')
-    // .then(() => console.log('success'))
-    // .catch(() => console.log('fail'));
-
-    // 분기 처리
-    const name = this.$route.name;
-    if(name === 'news'){
-        this.$store.dispatch('FETCH_NEWS')
-    }else if (name === 'ask'){
-        this.$store.dispatch('FETCH_ASK')
-    }else if (name ==='jobs'){
-        this.$store.dispatch('FETCH_JOBS')
-    }
-
-
-  },
   computed: {
     listItems(){
         const name = this.$route.name;

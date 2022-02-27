@@ -7,10 +7,25 @@
 <script>
 // import {  mapGetters } from 'vuex';
 import ListItem from '../components/ListItem.vue'
+import Bus from '../utils/bus.js'
 export default {
   components:{
     ListItem,
   },
+  created(){
+    Bus.$emit('start:spinner');
+    setTimeout(()=>{
+      this.$store.dispatch('FETCH_ASK')
+      .then(()=>{
+        console.log('fetched');
+        Bus.$emit('end:spinner');
+      })
+      .catch(err=>{
+        console.log(err);
+      });
+      Bus.$emit('end:spinner');
+    }, 3000);
+  }
   // created(){
   //   this.$store.dispatch('FETCH_ASK')
   //   .then(() => console.log('success'))
