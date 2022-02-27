@@ -14,37 +14,14 @@
             </a>
           </p>
           <small class="link-text">
-            by
+            {{item.time_ago}} by
             <router-link :to="`/user/${item.user}`" class="link-text">
               {{item.user}}
             </router-link>  
           </small>
         </div>
-        <!-- <a v-bind:href="item.url">
-        {{item.title}}
-        </a>
-        <small>
-          {{item.time_ago}}
-          by
-          <router-link :to="`/user/${item.user}`">
-            {{item.user}}
-          </router-link>
-        </small> -->
       </li>
     </ul>
-    <!-- <p v-for="item in fetchedNews" :key="item.id" >
-      <a v-bind:href="item.url">
-        {{item.title}}
-      </a>
-      <small>
-        {{item.time_ago}}
-        by
-        <router-link :to="`/user/${item.user}`">
-          {{item.user}}
-        </router-link>
-      </small>
-
-    </p> -->
   </div>
 </template>
 
