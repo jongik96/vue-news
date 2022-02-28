@@ -11,6 +11,9 @@ import ListMixin from '../mixins/ListMixin';
 export default {
   components: { ListItem },
   mixins: [ListMixin]
+  // mounted(){
+  //   Bus.$emit("end:spinner");
+  // }
   // created(){
   //   Bus.$emit('start:spinner');
   //   setTimeout(()=>{
