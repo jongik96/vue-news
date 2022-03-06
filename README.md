@@ -3,11 +3,18 @@
 ### Info
 HackerRank openAPI 를 활용한 뉴스 웹앱
 
+#### version
+
+vue : 2.6.11
+vue-router : 3.5.3
+vuex : 3.0.1
+
 ## 실행화면
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/68894097/156781759-8b53d791-2544-4335-a1aa-f9b968a43a5f.gif)
 
 ## Deployment
-Netlify 를 통해 배포했습니다
+
+Netlify
 
 ## 학습내용
 
